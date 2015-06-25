@@ -5,7 +5,7 @@ OBJS := $(addprefix objs/,$(notdir $(SRCS:.cpp=.o)))
 
 .PHONY: all dirs clean
 
-all: $(OBJS)
+all: dirs $(OBJS)
 	g++ -o main $^
 
 objs/%.o: src/%.cpp
@@ -16,4 +16,4 @@ dirs:
 
 clean:
 	rm -rf main
-	rm -rf objs/*
+	rm -rf objs
