@@ -1,2 +1,5 @@
 # ignore object dir
-obj/*
+objs/*
+
+# ignore executable
+main
