@@ -4,16 +4,6 @@
 int NUM_ROWS = 3;
 int NUM_COLS = 3;
 
-class tic_tac_toe{
-private:
-  std::string turn;
-  int row,col;
-  
-  
-
-  //
-};
-
 //displays the tic tac toe board
 void display_Board(std::string b [] [3]){
   
