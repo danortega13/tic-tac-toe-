@@ -4,7 +4,11 @@ class TicTacToeBoard {
 
 public:
   TicTacToeBoard();
+  void display_board(void);
+  std::vector<char> get_board(void);
 
 private:
-  std::vector<bool> m_board;
+  std::vector<char> m_board;
 };
+
+
