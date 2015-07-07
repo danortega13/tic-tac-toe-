@@ -13,7 +13,6 @@ TicTacToeBoard::TicTacToeBoard() :
 {
   // declaring these void for now to please compiler
   // remove when actually using them.
-  (void)PIECE_X;
   (void)PIECE_Y;
 }
 
@@ -25,3 +24,16 @@ void TicTacToeBoard::display_board(void){
     printf("\n");
   }
 } 
+
+bool TicTacToeBoard::check_move(int r, int c){
+  if(r > 0 && r < 3 && c > 0 && c < 3){
+    return true;
+  }
+  return false;
+
+}
+
+void TicTacToeBoard::place_move(int r, int c){
+  printf("inside place move\n");
+ m_board[3 * r + c] = PIECE_X;
+}
